@@ -150,6 +150,11 @@ body{
     align-items: center;
 }
 .contacs-phone-info-text {
+    position: relative;
+    box-sizing: border-box; /** позволит добавить padding */
+    padding: 50rem;
+
+
     border-radius: 8px;
     height: 50px;
     width: 100%;
