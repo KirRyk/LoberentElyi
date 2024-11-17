@@ -29,6 +29,10 @@ body{
     margin: 0;
     width: inherit;
 }
+.contacts-text:hover{
+    color: blue;
+    cursor: pointer;
+}
 .contacts-subtext {
     margin: 0;
     margin-top: 10px;
@@ -37,14 +41,11 @@ body{
     color: gray;
     width: inherit;
 }
-.contacts-text:hover{
-    color: blue;
-    cursor: pointer;
-}
 .contacts-block {
 }
 
 .contacts-info {
+    margin: auto;
     margin-top: 100px;
     background-color: rgb(41, 41, 41);
     border-radius: 20px;
@@ -54,6 +55,7 @@ body{
     position: relative;
     overflow: hidden;
     padding: 30px;
+    width: 80%;
 }
 .contacts-info-header {
     font-size: 30px;
@@ -109,6 +111,102 @@ body{
     color: gray;
     margin-bottom: 0;
     width: inherit;
+}
+.contacs-phone {
+    width: 50%;
+    background-color: rgb(230, 230, 230);
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+.contacs-phone-title {
+    width: 60%;
+}
+.contacs-phone-text {
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.2s;
+    margin: 0;
+    width: inherit;
+    margin-bottom: 30px;
+}
+.contacs-phone-subtext {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    width: inherit;
+}
+.contacs-phone-info {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacs-phone-info-text {
+    border-radius: 8px;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0.5em;
+    border: none; outline: 3px solid transparent;
+    background-image: 
+    linear-gradient(to bottom, #cacaca 3px, transparent 3px), 
+    linear-gradient(to bottom, #cacaca 3px, transparent 3px), 
+    linear-gradient(to right, #cacaca 3px, transparent 3px, transparent calc(100% - 3px), #cacaca calc(100% - 3px)), 
+    linear-gradient(to top, #cacaca 3px, transparent 3px);
+    background-position: -100% 0%, 200% 0%, 0% 100%, 0% 100%;
+    background-size: 20% 100%, 20% 100%, 100% 3px, 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size .4s ease-out .6s, background-position .6s ease-in;
+}
+  
+  .contacs-phone-info-text:focus {
+    background-position: 0% 0%, 100% 0%, 0% 100%, 0% 100%;
+    background-size: 51% 100%, 51% 100%, 100% 100%, 100% 100%;
+    transition: background-size .4s ease-in, background-position .6s ease-out .4s;
+  }
+.contacs-phone-info-text::placeholder {
+    padding-left: 15px; /* Устанавливаем отступ справа на 20 пикселей (или любое другое значение) */
+  }
+.contacs-phone-info-text:last-child{
+    border-radius: 8px;
+    border: none;
+    height: 50px;
+    width: 100%;
+}
+.filebutton{
+    background-color: rgb(209, 209, 209);
+    border: 1px dashed rgb(82, 82, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.filebutton:hover{
+    background: white;
+    cursor: pointer;
+}
+.filebutton-img{
+    width: 30px;
+    height: 30px;
+}
+.sendbutton{
+    background-color: blue;
+    color: white;
+    transition: 0.2s;
+}
+.sendbutton:hover{
+    background: black;
+    cursor: pointer;
+}
+.policity{
+    font-size: 10px;
+    font-weight: 100;
 }
 
 @media (max-width: 1200px){
@@ -183,5 +281,21 @@ body{
         height: 700px;
         left: -150px;
         top: 30px;
+    }
+    .contacs-phone{
+        flex-direction: column;
+    }
+    .contacs-phone-title{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contacs-phone-text{
+        font-size: medium;
+    }
+    .contacs-phone-subtext{
+        font-size: medium;
+    }
+    .contacs-phone-info{
+        width: 100%;
     }
 }
