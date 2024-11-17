@@ -75,6 +75,7 @@ body{
     border: none;
     font-weight: bolder;
     color: black;
+    cursor: pointer;
 }
 .contacts-info-maps:hover{
     background-color: black;
