@@ -74,6 +74,7 @@ body{
     margin-bottom: 200px;
     border: none;
     font-weight: bolder;
+    color: black;
 }
 .contacts-info-maps:hover{
     background-color: black;
@@ -186,6 +187,7 @@ body{
     justify-content: center;
     align-items: center;
     transition: 0.2s;
+    color: black;
 }
 .filebutton:hover{
     background: white;
@@ -199,6 +201,7 @@ body{
     background-color: blue;
     color: white;
     transition: 0.2s;
+    color: white;
 }
 .sendbutton:hover{
     background: black;
